@@ -5,7 +5,7 @@ Home: http://www.simplekml.com/en/latest/
 
 Package license: LGPL-3.0
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A Simple KML creator
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/simplekml-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/simplekml-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/simplekml-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/simplekml-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/simplekml-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/simplekml-feedstock/branch/master)
