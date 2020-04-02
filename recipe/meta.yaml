@@ -23,10 +23,14 @@ requirements:
 test:
   imports:
     - simplekml
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://www.simplekml.com/en/latest/
-  license: LGPL-3.0
+  license: LGPL-3.0-or-later
   license_file: LICENSE.txt
   summary: A Simple KML creator
 
