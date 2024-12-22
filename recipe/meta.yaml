@@ -5,20 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/s/simplekml/simplekml-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/s/simplekml/simplekml-{{ version }}.tar.gz
   sha256: cda687be2754395fcab664e908ebf589facd41e8436d233d2be37a69efb1c536
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -27,6 +27,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://www.simplekml.com/en/latest/
